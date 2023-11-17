@@ -1,9 +1,9 @@
-h1 {
-    color: #12E1B9;
+body {
+    padding: 0.3em;
 }
 
-nav {
-    margin: 1em;
+h1 {
+    color: #12E1B9;
 }
 
 nav li {
@@ -34,11 +34,13 @@ ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    gap: 3.5em;
 }
 
 .fun-token {
     height: 2em;
     transform: rotate(45deg);
+    padding: 0.5em;
 }
 
 .ui-icon {

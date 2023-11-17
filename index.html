@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <title>Sam Danger Warner: Software Engineer</title>
+  <link rel="icon" type="images/x-icon" href="../assets/images/SDW-transparent-background.png" />
+
+  <!-- Website link/share preview properties -->
+  <!-- Note: this would be fun to mess with dynamically like blog software would, pulling article content from individual posts, but this is a lightweight badboy and that's not a smart investment of my time. Here's a tool to test how things are coming out: https://developers.google.com/search/docs/appearance/structured-data and here's a basic guide now that I know way too much about this: https://www.freecodecamp.org/news/what-is-open-graph-and-how-can-i-use-it-for-my-website/#starting-with-the-basics-of-open-graph. Know that some social media sites like Pinterest AND LINKEDIN have their own specifications. -->
+  <meta property="og:type" content="profile" />
+  <!-- 
+    https://ogp.me/#types
+    other type examples: "website", "article" 
+  -->
+  <meta property="og:image" content="/static/website-social-card-image.jpg" />
+  <!-- 
+    The image gets cropped (on LinkedIn) into a 1.91:1 ratio and 1200 (width) x 627 (height) pixels. So you need an image with a compatible ratio and width of 1200px+.
+  -->
+  <meta property="og:description" content="Optional comment of up to 1300 characters" />
+  <!-- 
+    The description is an optional comment of up to 1300 characters. One could also type `property="description"`. 
+  -->
+  <meta property="og:url" content="mydomainlegibly-as-i-want-it-to-appear.com" />
+</head>
+
+<body>
+  <img class="fun-token" src="assets/images/grainy background.svg" alt="stylized little diamond shape">
+  <h1>SAM DANGER WARNER</h1>
+
+  <nav>
+    <ul class="navigation">
+      <li>
+        <div>
+          <a href="#about" class="nav-link">About</a>
+          <img class="ui-icon" src="assets/icons/right-arrow-green.svg" alt="continue arrow for about navigation button" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#skills" class="nav-link">Skills</a>
+          <img class="ui-icon" src="assets/icons/right-arrow-green.svg" alt="continue arrow for skills navigation button" />
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </div>
+      </li>
+      <li>
+        <a href="#projects" class="nav-link">Projects</a>
+        <img class="ui-icon" src="assets/icons/right-arrow-green.svg" alt="continue arrow for projects navigation button" />
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </li>
+      <li>
+        <a href="#contact" class="nav-link">Contact</a>
+        <img class="ui-icon" src="assets/icons/right-arrow-green.svg" alt="continue arrow for contact navigation button" />
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </li>
+      <li>
+        <a href="#credit" class="nav-link">Credit</a>
+        <img class="ui-icon" src="assets/icons/right-arrow-green.svg" alt="continue arrow for credit navigation button" />
+      </li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About Sam</h2>
+    <p>I like fun things.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div>
+        <p>css</p>
+        <p>some image</p>
+      </div>
+      <p>html</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h4 class="project-title">Project Title</h4>
+        <p class="project-description">words words words</p>
+        <div class="tech-icon-list">
+          <img class="tech-icon" src="assets/images/" alt="Angular" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <h5>your choice:</h5>
+    <ul class="opportunities">
+      <li>linkedin</li>
+      <li>github</li>
+      <li>email</li>
+    </ul>
+    <h5>...or:</h5>
+    <textarea></textarea>
+  </section>
+
+  <section id="credit">
+    <h2>Credit</h2>
+    <ul>
+      <li>Jared fucking rocks</li>
+      <li><a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by Roundicons - Flaticon</a></li>
+    </ul>
+  </section>
+
+  
+  <!-- Social accounts - Fixed to the right -->
+  <div class="socials">
+    <a href="#" target="_blank"
+      ><img
+        src="assets/icons/icons8-linkedin-circled.gif"
+        alt="Linkedin"
+        loading="lazy"
+        class="socicon"
+    /></a>
+    <a href="#" target="_blank"
+      ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+    /></a>
+  </div>
+
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/scroll-to-top.svg"
+      class="socicon up-arrow"
+      alt="a button to help you scroll to the top of the page immediately"
+  /></i>
+
+  <!-- scripts -->
+  <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

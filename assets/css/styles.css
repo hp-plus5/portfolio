@@ -1,0 +1,122 @@
+h1 {
+    color: #12E1B9;
+}
+
+nav {
+    margin: 1em;
+}
+
+nav li {
+    border: 1px orange solid;
+    height: 2em;
+    width: 7em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+nav li div {
+    border: 1px #12E1B9 solid;
+    height: 2em;
+    width: 7em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+nav li a {
+    text-decoration: none;
+    color: #12E1B9;
+}
+
+ul {
+    border: 1px #12E1B9 solid;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fun-token {
+    height: 2em;
+    transform: rotate(45);
+}
+
+.ui-icon {
+    height: 25px;
+}
+
+/* About */
+#about {
+    color: pink;
+}
+/* end of About */
+/*----------*/
+/* Skills */
+#skills {
+    color: purple;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* end of Skills */
+/*----------*/
+/* Projects */
+#projects {
+    color: purple;
+}
+
+.project-list {
+    border: 2px red solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*          Project card */
+.project-card {
+    border: 1px purple solid;
+}
+/*          End of project card */
+/* End of Projects */
+/*----------*/
+/* Contact */
+.opportunities {
+    list-style: armenian;
+}
+
+/* end of Contact */
+/*----------*/
+/* Credit */
+
+/* end of Credit */
+/*----------*/
+/* Social buttons */
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+}
+
+.socicon {
+    width: 2rem;
+    height: 2rem;
+}
+/* Social button ends */
+/*----------*/
+/* Scroll to top button */
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+  
+.up-arrow {
+    width: 3rem;
+    height: 3rem;
+}
+/* Scroll to top button ends */

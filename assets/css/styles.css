@@ -38,7 +38,7 @@ ul {
 
 .fun-token {
     height: 2em;
-    transform: rotate(45);
+    transform: rotate(45deg);
 }
 
 .ui-icon {

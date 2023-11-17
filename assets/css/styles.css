@@ -50,7 +50,11 @@ ul {
     color: pink;
 }
 /* end of About */
+
+
 /*----------*/
+
+
 /* Skills */
 #skills {
     color: purple;
@@ -62,7 +66,11 @@ ul {
     align-items: center;
 }
 /* end of Skills */
+
+
 /*----------*/
+
+
 /* Projects */
 #projects {
     color: purple;
@@ -80,18 +88,30 @@ ul {
 }
 /*          End of project card */
 /* End of Projects */
+
+
 /*----------*/
-/* Contact */
+
+
+/* -----Contact----- */
 .opportunities {
     list-style: armenian;
 }
 
 /* end of Contact */
+
+
 /*----------*/
+
+
 /* Credit */
 
 /* end of Credit */
+
+
 /*----------*/
+
+
 /* Social buttons */
 .socials {
     display: flex;
@@ -106,7 +126,11 @@ ul {
     height: 2rem;
 }
 /* Social button ends */
+
+
 /*----------*/
+
+
 /* Scroll to top button */
 .scroll-up {
     position: fixed;

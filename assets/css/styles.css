@@ -1,40 +1,65 @@
+:root {
+    --code-color: #12E1B9;
+}
+
 body {
     padding: 0.3em;
+    /* background-image: '../assets/images/space-wallpaper-4.jpeg'; */
+    background-color: black;
+    color: var(--code-color);
+    font-family: "IBM Plex Mono";
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+/* Could also style the sections like this if the content supports it anyway */
+nav {
+    height: 100vh;
 }
 
 h1 {
-    color: #12E1B9;
-}
-
-nav li {
-    border: 1px orange solid;
-    height: 2em;
-    width: 7em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-}
-
-nav li div {
-    border: 1px #12E1B9 solid;
-    height: 2em;
-    width: 7em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-}
-
-nav li a {
-    text-decoration: none;
-    color: #12E1B9;
+    color: var(--code-color);
 }
 
 ul {
-    border: 1px #12E1B9 solid;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 3.5em;
+    gap: 4em;
+    /* `ul` has a value of 40px unless set otherwise. This brings up questions of the wrapping and what I think looks best visually in responsive behavior. */
+    padding-inline-start: 30px;
+}
+
+li, button {
+    border: 1px orange solid;
+    height: 3em;
+    width: 12em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+li div, button {
+    border: 2px var(--code-color) solid;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+li a {
+    text-decoration: none;
+    color: var(--code-color);
+}
+
+/* reasserting <body> styling */
+button {
+    background-color: black;
+    color: var(--code-color);
+    font-family: "IBM Plex Mono";
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 .fun-token {
@@ -75,7 +100,7 @@ ul {
 
 /* Projects */
 #projects {
-    color: purple;
+    color: peachpuff;
 }
 
 .project-list {
@@ -115,7 +140,7 @@ ul {
 
 
 /* Social buttons */
-.socials {
+.social-media {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -123,9 +148,18 @@ ul {
     bottom: 50%;
 }
 
-.socicon {
-    width: 2rem;
-    height: 2rem;
+.ascii {
+    text-decoration: none;
+    color: var(--code-color);
+    white-space: pre;
+    text-transform: initial;
+    font-size: 18px;
+    line-height: 0.9;
+}
+
+.social-media-icon {
+    width: 2em;
+    height: 2em;
 }
 /* Social button ends */
 
@@ -142,7 +176,22 @@ ul {
 }
   
 .up-arrow {
-    width: 3rem;
-    height: 3rem;
+    width: 5em;
+    height: 5em;
 }
 /* Scroll to top button ends */
+
+/* scrollbar styling */
+body::-webkit-scrollbar {
+    width: 12px; /*8px*/
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--code-color);
+    border-radius: 8px;
+    border: 3px solid black;
+  }

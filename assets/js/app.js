@@ -1,59 +1,57 @@
-
 /**
  * Scroll to top button behavior
  */
-const scrollUp = document.querySelector("#scroll-up");
-
+const scrollUp = document.querySelector("#scroll-up")
 scrollUp.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     left: 0,
     behavior: "smooth",
-  });
-});
+  })
+})
 
 /**
  * Selector helper function
  */
-const select = (el, all = false) => {
-  el = el.trim()
-  if (all) {
-    return [...document.querySelectorAll(el)]
+const select = (element, allInstances = false) => {
+  element = element.trim()
+  if (allInstances) {
+    return [...document.querySelectorAll(element)]
   } else {
-    return document.querySelector(el)
+    return document.querySelector(element)
   }
 }
 
 /**
- * Hero type effect
+ * The typing effect ("I'm a ...")
  */
 const typed = select('.typed')
 if (typed) {
-  let typed_strings = typed.getAttribute('data-typed-items')
-  typed_strings = typed_strings.split(',')
+  let nouns = typed.getAttribute('data-typed-items')
+  nouns = nouns.split(',')
   new Typed('.typed', {
-    strings: typed_strings,
+    strings: nouns,
     loop: true,
     typeSpeed: 100,
     backSpeed: 50,
     backDelay: 2000
-  });
+  })
 }
 
 
 /**
- * Skills animation
+ * Skills animation (in progress)
  */
-let skillsContent = select('.skills-content');
+let skillsContent = select('.skills-content')
 if (skillsContent) {
   new Waypoint({
     element: skillsContent,
     offset: '80%',
     handler: function(direction) {
-      let progress = select('.progress .progress-bar', true);
-      progress.forEach((el) => {
-        el.style.width = el.getAttribute('aria-valuenow') + '%'
-      });
+      let progress = select('.progress .progress-bar', true)
+      progress.forEach((element) => {
+        element.style.width = element.getAttribute('aria-valuenow') + '%'
+      })
     }
   })
 }

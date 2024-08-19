@@ -2,6 +2,7 @@
     --code-color: #12E1B9;
     --glitch-pink: #ff3fab;
     --glitch-lavender: #f6c6ff;
+    --glitch-blue: #40adff;
 }
 
 body {
@@ -145,6 +146,60 @@ button {
 /*----------*/
 
 
+/* Reviews */
+#reviews {
+    color: var(--glitch-blue);
+    
+    li {
+        display: initial;
+        height: initial;
+        
+        color: orange;
+        width: 500px;
+        
+        p {
+            text-transform: none;
+        }
+    }
+    
+    p {
+        text-decoration: initial;
+        text-transform: lowercase;
+        margin: 0.25em 0;
+    }
+    
+    figure {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .sources {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 1em;
+        margin: 0 4em;
+    
+        a {
+            color: #ffc6c6;
+            text-decoration: underline;
+        }
+    
+        .relation {
+            font-size: small;
+            color: #eac5da;
+        }
+    }
+}
+/* end of Reviews */
+  
+  
+  /*----------*/
+  
+  
 /* -----Contact----- */
 .opportunities {
     list-style: armenian;

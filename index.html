@@ -17,22 +17,26 @@
   <link rel="icon" type="images/x-icon" href="../assets/images/SDW-transparent-background.png" />
 
   <!-- Website link/share preview properties -->
-  <!-- Note: this would be fun to mess with dynamically like blog software would, pulling article content from individual posts, but this is a lightweight badboy and that's not a smart investment of my time. Here's a tool to test how things are coming out: https://developers.google.com/search/docs/appearance/structured-data and here's a basic guide now that I know way too much about this: https://www.freecodecamp.org/news/what-is-open-graph-and-how-can-i-use-it-for-my-website/#starting-with-the-basics-of-open-graph. Know that some social media sites like Pinterest AND LINKEDIN have their own specifications. -->
+  <!-- Note: this would be fun to mess with dynamically like blog software would, pulling article content from individual posts, but this is a lightweight badboy and that's not a smart investment of my time. Here's a tool to test how things are coming out for google results kinds of structured preview content: https://developers.google.com/search/docs/appearance/structured-data and here's a basic guide now that I know way too much about this: https://www.freecodecamp.org/news/what-is-open-graph-and-how-can-i-use-it-for-my-website/#starting-with-the-basics-of-open-graph. Know that some social media sites like Pinterest AND LINKEDIN have their own specifications. -->
+  <meta property="og:title" content="Sam Warner" />
   <meta property="og:type" content="profile" />
   <!-- 
     https://ogp.me/#types
     other type examples: "website", "article" 
   -->
-  <meta property="og:image" content="/static/website-social-card-image.jpg" />
+  <!-- <meta property="og:image" content="/static/website-social-card-image.jpg" /> -->
   <!-- 
-    The image gets cropped (on LinkedIn) into a 1.91:1 ratio and 1200 (width) x 627 (height) pixels. So you need an image with a compatible ratio and width of 1200px+.
+    The image gets cropped (on LinkedIn) into a 1.91:1 ratio and 1200 (width) x 627 (height) pixels. So you need an image with a compatible ratio and width of 1200px+. If needed, one could add more than one image meta tag. The first listed is given preference during conflicts. Follow up each meta image tag with its immediate properties, such as "og:image:height" or "og:image:alt" before moving to the next "og:image" meta tag.
   -->
-  <meta property="og:description" content="Sam Warner is an intrinsically motivated self-starter who has produced high quality content both as   an individual and on a team. As someone that values emotional intelligence and empathy in the workplace, I have contributed to widening the knowledge base and improving communication between teams and vertical hierarchies in previous positions.
-  My five years of work experience have taken place in a number of different web development ecosystems. Those years have only touched the surface of all of the expertise I hunger for, but they have taught me to more deeply apply strategic concepts to any given project. In my past jobs, I’ve proven my ability to use a creative, analytical mindset to leave the company functioning more efficiently than I originally found it. I’d love to learn more about what your needs are and how I can help contribute to the success of the company." />
+  <meta property="og:image:alt" content="An image of whatever content I've decided to put into my image which currently doesn't exist" />
+  <meta property="og:description" content="Sam Warner is an intrinsically motivated self-starter who has produced high quality content both in an entirely independent contributor format and on a team. As someone who values emotional intelligence and empathy in the workplace, he has contributed to widening the knowledge base and improving communication between teams and vertical hierarchies in previous positions.
+
+  Sam's six years of work experience have taken place in a number of different web development ecosystems. Those years have only touched the surface of all of the expertise he's ravenous for, but they have taught him to more deeply apply strategic concepts to any given project. In his past jobs, he's proven his ability to use a creative, analytical mindset to leave the company functioning more efficiently than he originally found it. He'd love to learn more about what your needs are and how he can help contribute to the success of your company." />
   <!-- 
-    The description is an optional comment of up to 1300 characters. One could also type `property="description"`. 
+    The description is an optional comment of up to 1300 characters. One could also type `property="description"`. (Current content: 920 chars.)
   -->
-  <meta property="og:url" content="mydomainlegibly-as-i-want-it-to-appear.com" />
+  <!-- <meta property="og:url" content="mydomainlegibly-as-i-want-it-to-appear.com" /> -->
+  <!-- This tag permits you to make your domain more legible -->
 </head>
 <body>
   <header>

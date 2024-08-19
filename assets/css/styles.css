@@ -1,5 +1,7 @@
 :root {
     --code-color: #12E1B9;
+    --glitch-pink: #ff3fab;
+    --glitch-lavender: #f6c6ff;
 }
 
 body {
@@ -74,7 +76,7 @@ button {
 
 /* About */
 #about {
-    color: pink;
+    color: var(--glitch-lavender);
 }
 /* end of About */
 
@@ -84,7 +86,7 @@ button {
 
 /* Skills */
 #skills {
-    color: purple;
+    color: var(--glitch-pink);
 }
 
 .skills-list {

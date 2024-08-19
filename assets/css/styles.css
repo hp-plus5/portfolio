@@ -44,16 +44,16 @@ ul {
     padding-inline-start: 30px;
 }
 
-li, button {
+li {
     border: 1px orange solid;
     height: 3em;
     width: 12em;
     display: flex;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
 }
 
-li div, button {
+li div {
     border: 2px var(--code-color) solid;
     height: 100%;
     width: 100%;
@@ -72,10 +72,7 @@ li a {
     align-items: center; 
 }
 
-/* reasserting <body> styling */
 button {
-    background-color: black;
-    color: var(--code-color);
     font-family: "IBM Plex Mono";
     font-size: 1em;
     text-transform: uppercase;

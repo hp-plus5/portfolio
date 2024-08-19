@@ -5,7 +5,7 @@
 }
 
 body {
-    padding: 0.3em;
+    padding: 3em;
     /* background-image: '../assets/images/space-wallpaper-4.jpeg'; */
     background-color: black;
     color: var(--code-color);
@@ -19,15 +19,27 @@ nav {
     height: 100vh;
 }
 
+section {
+    margin: 4em 0;
+}  
+
 h1 {
     color: var(--code-color);
+}
+
+h2 {
+    small {
+      display: block;
+      font-size: medium;
+      text-transform: lowercase;
+    }
 }
 
 ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 4em;
+    gap: 1em 4em;
     /* `ul` has a value of 40px unless set otherwise. This brings up questions of the wrapping and what I think looks best visually in responsive behavior. */
     padding-inline-start: 30px;
 }
@@ -53,6 +65,11 @@ li div, button {
 li a {
     text-decoration: none;
     color: var(--code-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
 }
 
 /* reasserting <body> styling */
@@ -66,7 +83,7 @@ button {
 
 .fun-token {
     height: 2em;
-    transform: rotate(45deg);
+    transform: rotate(135deg);
     padding: 0.5em;
 }
 
@@ -101,21 +118,30 @@ button {
 
 
 /* Projects */
-#projects {
-    color: peachpuff;
-}
+#projects {    
+    ul {
+        border: 2px red solid;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
-.project-list {
-    border: 2px red solid;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    li {
+        border: 1px purple solid;
+        padding: 5px;
+    }
+    
+    .tech-icon-list, .samples {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-end;
+
+        img {
+        max-width: 30px;
+        }
+    }
 }
-/*          Project card */
-.project-card {
-    border: 1px purple solid;
-}
-/*          End of project card */
 /* End of Projects */
 
 
@@ -189,14 +215,34 @@ button {
 /* scrollbar styling */
 body::-webkit-scrollbar {
     width: 12px; /*8px*/
-  }
-  
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background: black;
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: var(--code-color);
     border-radius: 8px;
     border: 3px solid black;
-  }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        padding: 1em;
+    }
+    
+    blockquote {
+        margin: 1em;
+    }
+    
+    #reviews {
+        ul {
+            padding-inline-start: 0;
+        }
+        
+        .sources {
+            margin: 0;
+        }
+    }
+}

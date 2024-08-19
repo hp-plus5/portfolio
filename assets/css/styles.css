@@ -9,7 +9,7 @@ body {
     /* background-image: '../assets/images/space-wallpaper-4.jpeg'; */
     background-color: black;
     color: var(--code-color);
-    font-family: "IBM Plex Mono";
+    font-family: "IBM Plex Mono", monospace;
     font-size: 1em;
     text-transform: uppercase;
 }
@@ -157,6 +157,9 @@ button {
     text-transform: initial;
     font-size: 18px;
     line-height: 0.9;
+    
+    /* this is currently the body font, but I'd like to reduce unanticipated consequences of changing fonts given the exact spacing of ascii art. */
+    font: "IBM Flex Mono", monospace;
 }
 
 .social-media-icon {

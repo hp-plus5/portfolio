@@ -2,7 +2,7 @@
     --code-color: #12E1B9;
     --glitch-pink: #ff3fab;
     --glitch-lavender: #f6c6ff;
-    --glitch-blue: #40adff;
+    --glitch-blue: #c0e4ff;
 }
 
 body {
@@ -153,8 +153,6 @@ button {
     li {
         display: initial;
         height: initial;
-        
-        color: orange;
         width: 500px;
         
         p {

@@ -55,3 +55,31 @@ if (skillsContent) {
     }
   })
 }
+
+
+/**
+ * Profile carousel (in progress)
+ */
+function findCarousel(element) {
+  let parent = document.getElementById("projects");
+  console.log(parent);
+  for (let child of parent.children) {
+    if(child.tagName == "UL") {
+      // console.log(["hey, yeah!", child]);
+      turnCarousel(child, element);
+    }
+  }
+}
+
+function turnCarousel(list, arrow) {
+  // console.log(arrow);
+  // console.log(list);
+  if (arrow.id == "carousel-right") {
+    console.log("turn right!");
+  } else if (arrow.id == "carousel-left") {
+    console.log("turn left!");
+  } else {
+    console.log("we hecked up, boys");
+  }
+  // how to turn the visible list.children? we need a turn animation or something, right?
+}

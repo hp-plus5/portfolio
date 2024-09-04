@@ -89,6 +89,11 @@ button {
     height: 25px;
 }
 
+.arrow {
+    width: 5em;
+    height: 5em;
+}
+
 /* About */
 #about {
     color: var(--glitch-lavender);
@@ -172,6 +177,17 @@ button {
             max-width: 20%;
             height: inherit;
         }
+    }
+
+    /* .carousel-arrow {
+    } */
+
+    #carousel-right {
+        transform: rotate(90deg);
+    }
+    
+    #carousel-left {
+        transform: rotate(-90deg);
     }
 }
 /* End of Projects */
@@ -288,11 +304,6 @@ button {
     right: 0.5%;
     bottom: 3%;
     cursor: pointer;
-}
-  
-.up-arrow {
-    width: 5em;
-    height: 5em;
 }
 /* Scroll to top button ends */
 

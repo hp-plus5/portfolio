@@ -168,6 +168,7 @@ button {
     
     .samples > img {
         width: 45%;
+        max-width: 270px;
     }
 
     .tech-icon-list {

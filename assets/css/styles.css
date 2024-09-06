@@ -310,15 +310,15 @@ button {
 /* Scroll to top button ends */
 
 /* scrollbar styling */
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 12px; /*8px*/
 }
 
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: black;
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: var(--code-color);
     border-radius: 8px;
     border: 3px solid black;

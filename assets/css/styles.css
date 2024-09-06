@@ -133,6 +133,7 @@ button {
         border: 2px var(--glitch-lavender) solid;
         padding: 15px;
         height: 550px;
+        overflow-y: scroll;
         width: 45%;
         display: flex;
         flex-direction: column;

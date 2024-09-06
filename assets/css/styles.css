@@ -164,6 +164,8 @@ button {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        max-height: 250px;
+        overflow-y: scroll;
     }
     
     .samples > img {

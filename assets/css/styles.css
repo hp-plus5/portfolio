@@ -165,13 +165,16 @@ button {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        max-height: 250px;
-        overflow-y: scroll;
     }
     
-    .samples > img {
-        width: 45%;
-        max-width: 270px;
+    .samples {
+        max-height: 250px;
+        overflow-y: scroll;
+
+        > img {
+            width: 45%;
+            max-width: 270px;
+        }
     }
 
     .tech-icon-list {

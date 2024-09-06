@@ -132,7 +132,7 @@ button {
     li {
         border: 2px var(--glitch-lavender) solid;
         padding: 15px;
-        height: 550px;
+        height: 735px;
         width: 45%;
         display: flex;
         flex-direction: column;
@@ -165,10 +165,35 @@ button {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+
+    .tag-lists-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+
+        #tag-list-generic, #tag-list-technology {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 1em;
+            padding-left: unset;
+            margin: 1em 0;
+            border: 0;
+
+            li {
+                width: fit-content;
+                height: 20px;
+                padding: 3px 10px;
+                text-align: center;
+            }
+        } 
+    }
     
     .samples > img {
         width: 45%;
         max-width: 270px;
+        /* i could add a max-height here to make it easier to make content styling uniform, but it'd warp the images to set both a width and a height. since we're not making a CMS for completely dynamic content, after I've added all my content I may look back and see if that actually matters too much for my use case. suggested: max-height:200px; */
     }
 
     .tech-icon-list {

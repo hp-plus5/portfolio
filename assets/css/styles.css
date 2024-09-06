@@ -134,7 +134,7 @@ button {
         padding: 15px;
         height: 550px;
         overflow-y: scroll;
-        width: 45%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -345,6 +345,16 @@ button {
         
         .sources {
             margin: 0;
+        }
+    }
+
+    #projects {
+        ul {
+            padding-inline-start: 0;
+        }
+            
+        li {
+            width: 100%;
         }
     }
 }

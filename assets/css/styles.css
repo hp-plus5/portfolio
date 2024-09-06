@@ -349,7 +349,7 @@ button {
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 815px) {
     #projects {
         ul {
             padding-inline-start: 0;

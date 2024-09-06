@@ -80,6 +80,15 @@ button {
     text-transform: uppercase;
 }
 
+img[data-title]:hover:after {
+    display: block;
+    content: 'simple';
+    color: purple;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
+
 .fun-token {
     height: 2em;
     transform: rotate(135deg);

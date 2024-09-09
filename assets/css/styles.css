@@ -163,7 +163,6 @@ button {
     
     .tech-icon-list, .samples {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-evenly;
     }
     

@@ -167,6 +167,7 @@ button {
     }
     
     .samples {
+        flex-wrap: wrap;
         max-height: 250px;
         overflow-y: scroll;
 

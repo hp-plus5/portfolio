@@ -356,7 +356,9 @@ img[data-title]:hover:after {
             margin: 0;
         }
     }
+}
 
+@media screen and (max-width: 815px) {
     #projects {
         ul {
             padding-inline-start: 0;

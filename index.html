@@ -45,22 +45,14 @@
     <h1>SAM WARNER</h1>
     <p>I'm a <span class="typed" data-typed-items="Developer,Novelist,Musician"></span></p>
   </header>
-current fun: 
-- go through wave report and make corrections where i can. do the easy stuff first
   <nav>
     <ul>
-      <li>
-        <div>
-          <a href="#about" class="nav-link">About</a>
-          <img class="ui-icon" src="assets/icons/right-arrow-green.svg" alt="continue arrow for about navigation button" />
-        </div>
-      </li>
-      <li>
+      <!-- <li>
         <div>
           <a href="#skills" class="nav-link">Skills</a>
           <img class="ui-icon" src="assets/icons/right-arrow-green.svg" alt="continue arrow for skills navigation button" />
         </div>
-      </li>
+      </li> -->
       <li>
         <div>
           <a href="#projects" class="nav-link">Projects</a>
@@ -81,6 +73,12 @@ current fun:
       </li>
       <li>
         <div>
+          <a href="#about" class="nav-link">About</a>
+          <img class="ui-icon" src="assets/icons/right-arrow-green.svg" alt="continue arrow for about navigation button" />
+        </div>
+      </li>
+      <li>
+        <div>
           <a href="#credit" class="nav-link">Credit</a>
           <img class="ui-icon" src="assets/icons/right-arrow-green.svg" alt="continue arrow for credit navigation button" />
         </div>
@@ -89,25 +87,6 @@ current fun:
   </nav>
 
   <!-- I like the simplicity of the nav bar alone on the page, design-wise. I'm also thinking of adding some artwork that a friend made me, but they're big files and I'm still working on performance. -->
-
-  <section id="about">
-    <h2>
-      About Sam
-      <small>(like, in real life)</small>
-    </h2>
-    <ul>
-      <li><center>jazz</center></li>
-      <li><center>multicultural fantasy books</center></li>
-      <li><center>classical guitar</center></li>
-      <li><center>building things out of cardboard</center></li>
-      <li><center>languages</center></li>
-      <li><center>gardening</center></li>
-      <li><center>digital collage</center></li>
-      <li><center>taking walks</center></li>
-      <li><center>absolute silliness</center></li>
-      <li><center>eating all of earth's dumplings</center></li>
-    </ul>
-  </section>
 
   <!-- <section id="skills">
     <h2>Skills</h2>
@@ -129,7 +108,7 @@ current fun:
   </section> -->
 
   <section id="projects">
-    <h2>Projects</h2> (content & styling in progress)
+    <h2>Projects</h2>
     <!-- <i id="carousel-left" class="carousel-arrow" onClick="findCarousel(this)"
     ><img
       src="assets/icons/scroll-to-top.svg"
@@ -143,37 +122,117 @@ current fun:
       alt="a button to let you see more projects to the left"
   /></i> -->
     <ul>
-      <li>
-        <h4 class="project-title">Downtown TX</h4>
+      <li><h4 class="project-title">Mapping a Spreadsheet</h4>
+        <h5>2024</h5>
+        <a href="https://github.com/hp-plus5/mapp">frontend code</a>
+        <a href="https://github.com/hp-plus5/mapp-backend">backend code</a>
+        <p class="project-description">This is an ongoing project to take in a CSV and plot each row on a map (latitude and longitude required). A tooltip will be available on each plotted point with openly dynamic data based on the columns on the CSV. Uses React for its frontend and a Ruby on Rails API for its backend. (The tools are heavier than needed for the project, but the excuse to practice is fun.)</p>
+        <div class="samples">
+          <img
+            src="assets/images/Mapp/mapp-spreadsheetview.png"
+            alt="Rectangles with text on them representing articles are layered over one another in a still shot of a scrolling technique. The colors range from orange to blue to gradient pinks. The text has a drop-shadow to imitate comic book stylization."
+          />
+        </div>
+        <div class="tech-icon-list">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+            alt="React logo"
+            title="React"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="Javascript logo"
+            title="Javascript"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg"
+            alt="Rails logo"
+            title="Ruby on Rails"
+          />
+          <img
+            src="https://wiki.postgresql.org/images/a/a4/PostgreSQL_logo.3colors.svg"
+            alt="PostgreSQL logo"
+            title="PostreSQL"
+          />
+          <img
+            src="assets/images/logos/html.png"
+            alt="HTML logo"
+            title="HTML"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+            alt="CSS logo"
+            title="CSS"
+          />
+        </div>
+      </li>
+      <li><h4 class="project-title">Downtown TX</h4>
         <h5>2020</h5>
         <a href="https://www.downtownTX.org/waco-texas/">live site (except they've let their certs expire)</a>
         <p class="project-description">I helped develop an app that allows real estate professionals and local municipal government workers to record zoning and neighborhood boundaries to display properties to the public and property developers. Dynamic filtering options were specific to particular cities' configured preferences.</p>
         <div class="samples">
-          <img src="https://terra-content.s3.amazonaws.com/previewUrl/9ea7e086-4c18-46ae-815b-656cbd13f423_samwarner%40duck.com.PNG" alt="Screenshot of the section of the site I worked on" />
-          <img src="assets/images/CRE Planning and Development/What-I refactored-Step-2---Boundary-encloses.jpg" alt="Editing boundary lines" />
+          <img
+            src="https://terra-content.s3.amazonaws.com/previewUrl/9ea7e086-4c18-46ae-815b-656cbd13f423_samwarner%40duck.com.PNG"
+            alt="Screenshot of the section of the site I worked on, showcasing a filter system (such as (this isn't all of them) 'show land with prices between x and y' and 'lot size in acres' with dropdowns and 'eligible for local incentives', 'listed on the National Register', 'Elevator', and 'Vacant/Underutilized' checkmarks) reflected onto a resulting map with the resulting locations on it as well as color-coded boundary lines and a minimizable legend that permits you to toggle on or off the visibility of those boundaries. There is also a list result next to the map which lists the specific properties that fit your filters." />
+          <img 
+            src="assets/images/CRE Planning and Development/What-I refactored-Step-2---Boundary-encloses.jpg"
+            alt="This screenshot of the app shows an administrator's view. They can move boundary lines by clicking on or adding corners, select the color for each boundary group, and delete, create, name, toggle 'show/hide', and set other characteristics on each boundary (such as 'visible to public', as this site is publicly facing but is also used for internal negotiations with larger development companies) and shows how many properties are encapsulated in each boundary."
+          />
         </div>
         <div class="tech-icon-list">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Javascript logo" />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js logo" />
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS logo" />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP logo" />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="Javascript logo"
+            title="Javascript"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"
+            alt="Vue.js logo"
+            title="Vue.js"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+            alt="CSS logo"
+            title="CSS"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+            alt="PHP logo"
+            title="PHP"
+          />
         </div>
       </li>
-      <li>
-        <h4 class="project-title">Cleveland Metroparks Streetview</h4>
+      <li><h4 class="project-title">Metropark Trail Streetview</h4>
         <h5>2018</h5>
         <a href="https://github.com/craiglawrie/VirtualMetroparks">code</a>
         <a href="assets/images/ClevelandMetroparks/Team Ampersand - Executive Summary.pdf">executive summary</a>
         <p class="project-description">Made a Google Streetview-like experience where one could walk along trail paths in Cleveland's metroparks without having to be there in person.</p>
         <div class="samples">
-          <img src="assets/images/ClevelandMetroparks/executive-summary.png" alt="An image of the executive summary" />
-          <img src="assets/images/ClevelandMetroparks/metroparks-code-screenshot.png" alt="An image glimpse of a snippet of the code found in the code link" />
+          <img
+            src="assets/images/ClevelandMetroparks/executive-summary.png"
+            alt="An preview of the executive summary from the executive summary link"
+          />
+          <img
+            src="assets/images/ClevelandMetroparks/metroparks-code-screenshot.png"
+            alt="An image glimpse of a snippet of the code found in the code link"
+          />
         </div>
         <div class="tech-icon-list">
-          <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular logo" />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/480px-Typescript_logo_2020.svg.png" alt="TypeScript logo" />
-          <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" alt="C# logo" />
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS logo" />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png"
+            alt="C# logo"
+            title="C#"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="Javascript logo"
+            title="Javascript"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+            alt="CSS logo"
+            title="CSS"
+          />
         </div>
         <div class="tag-lists-container">
           <ul id="tag-list-generic">
@@ -190,19 +249,257 @@ current fun:
           </ul>
         </div>
       </li>
-      <li>
-        <h4 class="project-title">Bookmobile</h4>
+      <li><h4 class="project-title">Bookmobile</h4>
         <h5>2019</h5>
         <a href="https://www.github.com/hp-plus5/bookmobile">code</a>
         <p class="project-description">The bookmobile is a web app I wrote to help one sort through and see (via charts) one's personal library as well as gain insights into the diversity of thought via diversity of authors. It's written in Angular, TypeScript, and ngx-charts (an Angular wrapper for D3) and calls on an API I wrote in C#.</p>
         <div class="samples">
-          <img src="https://terra-content.s3.amazonaws.com/previewUrl/cd29f6a8-74b1-4bd0-b6f9-d48cacfa54da_samwarner%40duck.com.png" alt="The preview image of the Github repository where I wrote the code for Bookmobile" />
+          <img
+            src="https://terra-content.s3.amazonaws.com/previewUrl/cd29f6a8-74b1-4bd0-b6f9-d48cacfa54da_samwarner%40duck.com.png"
+            alt="The preview image of the Github repository from the code link"
+          />
         </div>
         <div class="tech-icon-list">
-          <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular logo" />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/480px-Typescript_logo_2020.svg.png" alt="TypeScript logo" />
-          <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" alt="C# logo" />
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS logo" />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/480px-Typescript_logo_2020.svg.png"
+            alt="TypeScript logo"
+            title="TypeScript"
+          />
+          <img
+            src="https://angular.io/assets/images/logos/angular/angular.svg"
+            alt="Angular logo"
+            title="Angular"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png"
+            alt="C# logo"
+            title="C#"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+            alt="CSS logo"
+            title="CSS"
+          />
+        </div>
+      </li>
+      <li><h4 class="project-title">Imitation Site</h4>
+        <h5>2023</h5>
+        <a href="https://codepen.io/hp-plus5/pen/ExJwErY">visuals & code</a>
+        <p class="project-description">I wrote this frontend-only imitation of an existing marketing site that's mobile-friendly.</p>
+        <div class="samples">
+          <img
+            src="assets/images/ImitationSite/MobilePreview.png"
+            alt="This is a preview image of what the link above will show. This is the mobile view of the header of the site."
+          />
+          <img
+            src="assets/images/ImitationSite/DesktopPreview.png"
+            alt="This is a preview image of what the link above will show. This is the desktop view of the footer of the site."
+          />
+        </div>
+        <div class="tech-icon-list">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="Javascript logo"
+            title="Javascript"
+          />
+          <img
+            src="assets/images/logos/html.png"
+            alt="HTML logo"
+            title="HTML"
+          />
+          <img
+            src="assets/images/logos/scss.png"
+            alt="Sass logo (for SCSS syntax)"
+            title="Sass (SCSS syntax)"
+          />
+        </div>
+      </li>
+      <li><h4 class="project-title">Stationary</h4>
+        <h5>2023</h5>
+        <a href="https://codepen.io/hp-plus5/pen/PoxgavP">dotted design: visuals & code</a>
+        <a href="https://codepen.io/hp-plus5/pen/yLQrYNK">lined design: visuals & code</a>
+        <p class="project-description">This was a creativity exercise in design more than a coding challenge; a couple hours' worth of entertainment. The lined table's length is generated by JS dynamically to be most attractive on the viewport the page is first loaded to.</p>
+        <div class="samples">
+          <img
+            src="assets/images/Stationary/lined.png"
+            alt="This is a preview image of what the link above will show. This is a table of uneven column widths and a date entry in the upper righthand side. There are pleasing saturated orange and inky blues over a cream background."
+          />
+          <img
+            src="assets/images/Stationary/dotted.png"
+            alt="This is a preview image of what the link above will show. This is one page of a habit journal. It is black and white with a dotted background that fits in with the form lines, leaving the area around the text easily legible."
+          />
+        </div>
+        <div class="tech-icon-list">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="Javascript logo"
+            title="Javascript"
+          />
+          <img
+            src="assets/images/logos/html.png"
+            alt="HTML logo"
+            title="HTML"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+            alt="CSS logo"
+            title="CSS"
+          />
+        </div>
+      </li>
+      <li><h4 class="project-title">Pomodoro App Design</h4>
+        <h5>2024</h5>
+        <a href="https://www.canva.com/design/DAGIldg0Xe0/T3tBfeZhZzA7uGQ7RYEubg/edit?utm_content=DAGIldg0Xe0">mockups & documentation</a>
+        <p class="project-description">I made a series of mockups for a non-existent mobile application inspired by my vegetable garden. Each mockup in the link has notes on it that explain its exact engagement point within navigation.</p>
+        <div class="samples">
+          <img
+            src="assets/images/Pomodoro/MockupCountdown.png"
+            alt="This is a preview image of what the link above will show. This is the mobile view of the header of the site."
+          />
+          <img
+            src="assets/images/Pomodoro/MockupCreation.png"
+            alt="This is a preview image of what the link above will show. This is the desktop view of the footer of the site."
+          />
+        </div>
+        <div class="tech-icon-list">
+        </div>
+      </li>
+      <li><h4 class="project-title">Interactive Table of Contents</h4>
+        <h5>2023</h5>
+        <a href="https://codepen.io/hp-plus5/pen/ZEVgvqW">visuals & code</a>
+        <p class="project-description">I used SCSS functions and CSS animations to style a dynamically created list of anchor links for a theoretical blog CMS (in fact, the inspiration <a href="https://fellow.app/blog/leadership/engineering-staff-engineer-vs-senior-engineer/#1">came from one</a>).</p>
+        <div class="samples">
+          <img
+            src="assets/images/TableOfContents/TableofContents.png"
+            alt="This is a preview image of what the link above will show. There are bright yellow numbers on a deep purple background. Next to each number is the theoretical title of a section within an article in white. One can see a mouse hovering over one of the section titles, and the white label text has shifted to the right to make it stand out more from the others."
+          />
+        </div>
+        <div class="tech-icon-list">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="Javascript logo"
+            title="Javascript"
+          />
+          <img
+            src="assets/images/logos/scss.png"
+            alt="Sass logo (for SCSS syntax)"
+            title="Sass (SCSS syntax)"
+          />
+        </div>
+      </li>
+      <li><h4 class="project-title">Desktop E-commerce Market</h4>
+        <h5>2024</h5>
+        <a href="https://codepen.io/hp-plus5/pen/PoPNLJo">visuals & code</a>
+        <p class="project-description">This was meant to provide a glimpse of what a single day of my work looks like. The goal was not to complete every aspect of every feature, but just to show what it looks like for me to go from basically no elements on the page in the morning to my saved files at dinner time.</p>
+        <div class="samples">
+          <img
+            src="assets/images/EcommerceShoes/closeup-on-like-animation.png"
+            alt="This is a closeup still of the animation that happens when the user 'likes' a product. An image of a heart sends several other hearts up into the area above it at random intervals, colors, and sizes."
+          />
+          <img
+            src="assets/images/EcommerceShoes/closeup-on-options-selection.png"
+            alt="This is a preview image of what the link above will show. This is the desktop view of the footer of the site."
+          />
+        </div>
+        <div class="tech-icon-list">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="Javascript logo"
+            title="Javascript"
+          />
+          <img
+            src="assets/images/logos/html.png"
+            alt="HTML logo"
+            title="HTML"
+          />
+          <img
+            src="assets/images/logos/scss.png"
+            alt="Sass logo (for SCSS syntax)"
+            title="Sass (SCSS syntax)"
+          />
+        </div>
+      </li>
+      <li><h4 class="project-title">UX: Skeleton Load</h4>
+        <h5>2020</h5>
+        <a href="https://codepen.io/hp-plus5/pen/eYppmqB">visuals & code</a>
+        <p class="project-description">This quick project illustrated a fad a few years ago that was meant to give your users the illusion of a faster load time by using a skeleton that loads in before the rest of the page. I have not seen firsthand evidence that that actually works, but it was a fun to do on a Saturday during the early pandemic!</p>
+        <div class="samples">
+          <img
+            src="assets/images/SkeletonLoad/empty.png"
+            alt="There are some shapes on a white background, but there is no content; it is nearly a solid color circle in place of where a logo would go on a website, and squares where a presumed product list might belong below it. This would briefly appear to the user while the browser loaded in the full content of a presumably client-side loading process."
+          />
+          <img
+            src="assets/images/SkeletonLoad/full.png"
+            alt="A very basic e-commerce site. It is hideous. God frowns on this creation."
+          />
+        </div>
+        <div class="tech-icon-list">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="Javascript logo"
+            title="Javascript"
+          />
+          <img
+            src="assets/images/logos/html.png"
+            alt="HTML logo"
+            title="HTML"
+          />
+          <img
+            src="assets/images/logos/scss.png"
+            alt="Sass logo (for SCSS syntax)"
+            title="Sass (SCSS syntax)"
+          />
+        </div>
+      </li>
+      <li><h4 class="project-title">Theme & Translation Swapper</h4>
+        <h5>2020</h5>
+        <a href="https://codepen.io/hp-plus5/pen/dyoJRbY">visuals & code</a>
+        <p class="project-description">This project toggles the text of the page between  English and German using JS to imitate the JSON one realistically gets back from an internationalization/ translation service. The other toggles the color scheme using a `data-*` attribute.</p>
+        <div class="samples">
+          <img
+            src="assets/images/ThemeSwapper/screenshot.png"
+            alt="In the center of this screenshot is a rounded rectangle that has a high-contrast dark green font over light green background. There are two buttons above the rectangle, a random image on the right whose rounded nature reflects that of the rectangle, and some credits at the bottom."
+          />
+        </div>
+        <div class="tech-icon-list">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="Javascript logo"
+            title="Javascript"
+          />
+          <img
+            src="assets/images/logos/html.png"
+            alt="HTML logo"
+            title="HTML"
+          />
+          <img
+            src="assets/images/logos/scss.png"
+            alt="Sass logo (for SCSS syntax)"
+            title="Sass (SCSS syntax)"
+          />
+        </div>
+      </li>
+      <li><h4 class="project-title">Parallax Scroll</h4>
+        <h5>2020</h5>
+        <a href="https://codepen.io/hp-plus5/pen/dyoJRbY">visuals & code</a>
+        <p class="project-description">I had fun learning about parallax scroll in 2020 with this pen. The concept is based on separating the background of a page from the foreground.  In my case, I made a background that remains static while foreground content rolls by as you scroll. I also made a middle layer of the page in order to add fun visual depth and showcase my understanding of the topic.</p>
+        <div class="samples">
+          <img
+            src="assets/images/Parallax/scroooolll.png"
+            alt="Rectangles with text on them representing articles are layered over one another in a still shot of a scrolling technique. The colors range from orange to blue to gradient pinks. The text has a drop-shadow to imitate comic book stylization."
+          />
+        </div>
+        <div class="tech-icon-list">
+          <img
+            src="assets/images/logos/html.png"
+            alt="HTML logo"
+            title="HTML"
+          />
+          <img
+            src="assets/images/logos/scss.png"
+            alt="Sass logo (for SCSS syntax)"
+            title="Sass (SCSS syntax)"
+          />
         </div>
       </li>
     </ul>
@@ -258,20 +555,41 @@ current fun:
       <li><a href="https://www.linkedin.com/in/sam-warner" target="_blank">LinkedIn</a></li>
       <li><a href="tel:12163090981" target="_blank">telephone</a></li>
     </ul>
-    <h5>...or see more of my work:</h5>
+  </section>
+
+  <section> <!-- A link here does not seem relevant unless you have previously witnessed projects, so I'm not creating an anchor link for it to view from the nav menu. --><h2>See More of my Work</h2>
     <ul class="opportunities">
-      <li>Sample</li>
-      <li><a href="https://www.github.com/hp-plus5" target="_blank">Github</a><br/><small>(Code Samples)</small></li>
-      <li><a href="https://www.codepen.io/hp-plus5">Codepen</a><br/><small>(Visual Samples)</small></li>
-      <li><a href="somegooglelink">Documentation Sample</a></li>
+      <li><a href="https://www.github.com/hp-plus5" target="_blank">Github<small>(Code Samples)</small></a></li> 
+      <li><a href="https://www.codepen.io/hp-plus5" target="_blank">Codepen<small>(Visual Samples)</small></a></li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>
+      About Sam
+    </h2>
+    <ul>
+      <li><center>absolute silliness</center></li>
+      <li><center>classical guitar</center></li>
+      <li><center>building things out of cardboard</center></li>
+      <li><center>languages</center></li>
+      <li><center>gardening</center></li>
+      <li><center>digital collage</center></li>
+      <li><center>taking walks</center></li>
+      <li><center>jazz</center></li>
+      <li><center>multicultural fantasy books</center></li>
+      <li><center>eating all of earth's dumplings</center></li>
     </ul>
   </section>
 
   <section id="credit">
     <h2>Credit</h2>
     <ul>
-      <li>Jared fucking rocks</li>
+      <!-- <li>Jared will add art later</li> -->
       <li><center><a href="https://www.flaticon.com/free-icons/next" title="next icons"><small>Next icons created by Roundicons - Flaticon</small></a></center></li>
+      <li><center><a href="https://www.flaticon.com/free-icons/next" title="C# & CSS icons"><small>C# & CSS icons sourced on Flaticon</small></a></center></li>
+      <li><center><a href="https://icons8.com/icon/20909/html-5" title="HTML icons"><small>HTML icon sourced on icons8</small></a></center></li>
+      <li><center><small>Wikipedia, for the rest of my tech icons</small></center></li>
     </ul>
   </section>
 

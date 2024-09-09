@@ -71,6 +71,7 @@ li a {
     display: flex;
     justify-content: space-around;
     align-items: center; 
+    flex-wrap: wrap;
 }
 
 button {
@@ -123,7 +124,6 @@ button {
 /* Projects */
 #projects {    
     ul {
-        border: 2px red solid;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -134,6 +134,7 @@ button {
         padding: 15px;
         height: 735px;
         width: 45%;
+        overflow-y: scroll;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -162,7 +163,6 @@ button {
     
     .tech-icon-list, .samples {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-evenly;
     }
 
@@ -190,16 +190,25 @@ button {
         } 
     }
     
-    .samples > img {
-        width: 45%;
-        max-width: 270px;
-        /* i could add a max-height here to make it easier to make content styling uniform, but it'd warp the images to set both a width and a height. since we're not making a CMS for completely dynamic content, after I've added all my content I may look back and see if that actually matters too much for my use case. suggested: max-height:200px; */
+    .samples {
+        flex-wrap: wrap;
+        max-height: 250px;
+        overflow-y: scroll;
+
+        img:only-of-type {
+            width: 100%;
+        }
+
+        img {
+            width: 45%;
+            max-width: 270px;
+        }
     }
 
     .tech-icon-list {
         max-height: 50px;
 
-        > img {
+        img {
             max-width: 20%;
             height: inherit;
         }
@@ -271,7 +280,7 @@ button {
 /* end of Reviews */
   
   
-  /*----------*/
+/*----------*/
   
   
 /* -----Contact----- */
@@ -334,15 +343,15 @@ button {
 /* Scroll to top button ends */
 
 /* scrollbar styling */
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 12px; /*8px*/
 }
 
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: black;
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: var(--code-color);
     border-radius: 8px;
     border: 3px solid black;
@@ -364,6 +373,18 @@ body::-webkit-scrollbar-thumb {
         
         .sources {
             margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 815px) {
+    #projects {
+        ul {
+            padding-inline-start: 0;
+        }
+            
+        li {
+            width: 100%;
         }
     }
 }

@@ -170,6 +170,10 @@ button {
         max-height: 250px;
         overflow-y: scroll;
 
+        img:only-of-type {
+            width: 100%;
+        }
+
         img {
             width: 45%;
             max-width: 270px;

@@ -171,7 +171,7 @@ button {
         max-height: 250px;
         overflow-y: scroll;
 
-        > img {
+        img {
             width: 45%;
             max-width: 270px;
         }
@@ -180,7 +180,7 @@ button {
     .tech-icon-list {
         max-height: 50px;
 
-        > img {
+        img {
             max-width: 20%;
             height: inherit;
         }

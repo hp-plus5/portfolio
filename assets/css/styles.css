@@ -13,6 +13,12 @@ body {
     font-family: "IBM Plex Mono", monospace;
     font-size: 1em;
     text-transform: uppercase;
+
+    *:focus {
+        border: 2px solid var(--code-color);
+        background-color:beige;
+        color: black;
+    }
 }
 
 /* Could also style the sections like this if the content supports it anyway */
@@ -159,6 +165,11 @@ button {
         height: auto;
         text-decoration: revert;
         text-transform: lowercase;
+    
+        &:focus {
+            color: black;
+            text-indent: 5px;
+        }
     }
     
     .tech-icon-list, .samples {

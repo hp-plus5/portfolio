@@ -244,6 +244,12 @@ button {
         justify-content: space-between;
         flex-direction: column;
         height: 100%;
+        
+        blockquote {
+            p:not(:only-of-type):not(:first-child) {
+                margin-top: 1em;
+            }
+        }
     }
     
     .sources {
@@ -261,6 +267,7 @@ button {
         .relation {
             font-size: small;
             color: #eac5da;
+            text-align: right;
         }
     }
 }

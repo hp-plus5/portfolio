@@ -262,6 +262,7 @@ button {
         a {
             color: #ffc6c6;
             text-decoration: underline;
+            display: inline;
         }
     
         .relation {

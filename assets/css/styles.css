@@ -179,7 +179,7 @@ button {
     
     .samples {
         flex-wrap: wrap;
-        max-height: 250px;
+        max-height: fit-content;
         overflow-y: scroll;
 
         img:only-of-type {

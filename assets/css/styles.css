@@ -3,6 +3,7 @@
     --glitch-pink: #ff3fab;
     --glitch-lavender: #f6c6ff;
     --glitch-blue: #c0e4ff;
+    --highlighter-yellow: #e8fa8e;
 }
 
 body {
@@ -127,8 +128,8 @@ button {
 /*----------*/
 
 
-/* Projects */
-#projects {    
+/* Projects (& Writing Samples Skeleton) */
+#projects, #writing-samples {    
     ul {
         display: flex;
         justify-content: space-evenly;
@@ -159,7 +160,7 @@ button {
         text-transform: none;
     }
     
-    a {
+    a { 
         color: var(--glitch-lavender);
         display: revert;
         height: auto;
@@ -226,6 +227,28 @@ button {
 }
 /* End of Projects */
 
+
+/*----------*/
+
+/* Writing Samples */
+#writing-samples {
+    li {
+        border: 2px var(--glitch-pink) solid;
+    }
+
+    h2, h4, h5, p {
+        color: var(--highlighter-yellow);
+    }
+
+    a { 
+        color: var(--glitch-pink);
+    }
+    
+    *::-webkit-scrollbar-thumb {
+        background-color: var(--highlighter-yellow);
+    }
+}
+/* End of Writing Samples */
 
 /*----------*/
 
@@ -389,7 +412,7 @@ button {
 }
 
 @media screen and (max-width: 815px) {
-    #projects {
+    #projects, #writing-samples {
         ul {
             padding-inline-start: 0;
         }

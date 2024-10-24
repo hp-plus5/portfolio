@@ -91,15 +91,10 @@ button {
     text-transform: uppercase;
 }
 
-.fun-token {
+.brand-token {
     height: 2em;
     transform: rotate(135deg);
     padding: 0.5em;
-}
-
-.arrow {
-    width: 5em;
-    height: 5em;
 }
 
 /* About */
@@ -373,6 +368,11 @@ button {
     right: 0.5%;
     bottom: 3%;
     cursor: pointer;
+}
+
+.up-arrow {
+    width: 5em;
+    height: 5em;
 }
 /* Scroll to top button ends */
 

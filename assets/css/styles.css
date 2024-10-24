@@ -24,6 +24,10 @@ body {
 /* Could also style the sections like this if the content supports it anyway */
 nav {
     height: 100vh;
+    
+    .ui-icon {
+        height: 25px;
+    }
 }
 
 section {
@@ -90,10 +94,6 @@ button {
     height: 2em;
     transform: rotate(135deg);
     padding: 0.5em;
-}
-
-.ui-icon {
-    height: 25px;
 }
 
 .arrow {
@@ -293,6 +293,10 @@ button {
 /* -----Contact----- */
 .opportunities {
     list-style: armenian;
+
+    .ui-icon {
+        height: 20px;
+    }
 }
 
 /* end of Contact */
